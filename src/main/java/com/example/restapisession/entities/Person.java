@@ -23,6 +23,8 @@ public class Person {
     private String email;
     private int age;
     private String phoneNumber;
+//    @OneToOne
+//    private Passport passport;
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "person",fetch = FetchType.EAGER)
     private List<Car> cars;

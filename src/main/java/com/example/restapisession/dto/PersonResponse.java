@@ -1,15 +1,15 @@
-package com.example.restapisession.dto.requests;
+package com.example.restapisession.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @Getter
 @Setter
-public class PersonRequest {
+@AllArgsConstructor
+public class PersonResponse {
+    private Long id;
     private String fullName;
     private String email;
-    private LocalDate dateOfBirth;
     private String phoneNumber;
 }
